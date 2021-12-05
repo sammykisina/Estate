@@ -76,7 +76,7 @@ const PropertyDetails = ({
                 Description
               </span>
             </span>
-            <p className="text-center">
+            <p className="text-left">
               {readMore ? description : `${description.substring(0, 200)} ...`}{" "}
               <button
                 className="text-lg text-indigo-800 hover:text-indigo-500 "
