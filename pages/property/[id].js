@@ -96,7 +96,7 @@ const PropertyDetails = ({
             </span>
           </span>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3  px-4 py-2 gap-2 items-center">
+          <div className=" grid grid-cols-1 sm:grid-cols-3 px-4 py-2 gap-2 items-center">
             <div className="flex gap-2 col-span-1">
               <span className="text-xl text-indigo-700">Type:</span>
               <span className="text-lg">{type}</span>
@@ -114,7 +114,7 @@ const PropertyDetails = ({
           </div>
         </div>
 
-        <div className="flex justify-center gap-2 mx-4">
+        <div className="flex flex-col ms:flex-row items-center justify-center gap-2 mx-4">
           <div className="flex justify-center flex-col">
             <span className="text-3xl text-indigo-800 ">Amenities</span>
             <div className="w-20 h-1 mb-5 bg-indigo-900 ml-auto mr-auto"></div>
@@ -124,7 +124,7 @@ const PropertyDetails = ({
             {amenities.map((item) =>
               item.amenities.map((amenity) => (
                 <span
-                  className="bg-indigo-100 px-3 rounded-full mx-2 text-xl text-gray-900"
+                  className="bg-indigo-100 px-3 rounded-full mx-2  text-gray-900"
                   key={amenity.text}
                 >
                   {amenity.text}

@@ -8,7 +8,7 @@ function Navbar() {
   const [openPopover, setOpenPopover] = useState(false);
 
   return (
-    <div className="border flex justify-between px-10 items-center py-1 mx-10  rounded-md border-indigo-100 bg-indigo-50 sticky top-0 z-50">
+    <div className="border flex justify-between px-2 sm:px-10 items-center py-1 mx-10  rounded-md border-indigo-100 bg-indigo-50 sticky top-0 z-50">
       <div className="border px-2 py-1 rounded-full text-indigo-700 text-lg tracking-widest shadow-md drop-shadow-lg bg-white">
         <Link href="/">LaraEstate</Link>
       </div>

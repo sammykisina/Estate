@@ -8,6 +8,10 @@
     url(../public/fonts/Roboto/Roboto-ThinItalic.ttf) format("truetype");
 }
 
+.image {
+  @apply sm:w-1/2;
+}
+
 ::-webkit-scrollbar {
   width: 16px;
   height: 16px;

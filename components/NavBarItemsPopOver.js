@@ -7,7 +7,7 @@ import { HiMenuAlt3, HiCubeTransparent, HiCash } from "react-icons/hi";
 function NavBarItemsPopOver() {
   return (
     <div className="w-full">
-      <Popover className="relative">
+      <Popover className="">
         {({ open }) => (
           <>
             <Popover.Button

@@ -46,7 +46,6 @@ const Banner = ({
 );
 
 export default function Home({ propertyForSale, propertyForRent }) {
-  console.log(propertyForSale, propertyForRent);
   return (
     <div>
       {/* Banners to introduce the properties in two categories */}
@@ -80,7 +79,7 @@ export default function Home({ propertyForSale, propertyForRent }) {
       />
 
       {/* properties for sale */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 sm:mx-2  lg:mx-6">
+      <div className="grid grid-cols-1 px-2 sm:grid-cols-2 lg:grid-cols-3 sm:gap-2 sm:mx-2  lg:mx-6">
         {propertyForSale.map((property) => (
           <Property property={property} key={property.id} />
         ))}

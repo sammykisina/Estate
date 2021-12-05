@@ -37,7 +37,7 @@ function SearchFilters() {
             >
               <div className="relative mt-1">
                 <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-50 rounded-md shadow-md border cursor-pointer sm:text-sm">
-                  <span className="text-lg text-indigo-700">
+                  <span className="text-sm sm:text-lg text-indigo-700">
                     {filter.placeholder}
                   </span>
                   <span className="absolute inset-y-0 right-0 flex items-center pr-2">

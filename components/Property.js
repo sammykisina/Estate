@@ -23,15 +23,16 @@ const Property = ({
 }) => (
   <Link href={`/property/${externalID}`} passHref className="col-span-1">
     <div className="flex justify-center items-center flex-col my-3 cursor-pointer">
-      <Image
-        src={coverPhoto ? coverPhoto.url : DefaultImage}
-        width={400}
-        height={260}
-        alt="House"
-        className="rounded-md"
-      />
-
-      <div className="flex justify-between items-center w-60 my-3">
+      <div className="image-container">
+        <Image
+          src={coverPhoto ? coverPhoto.url : DefaultImage}
+          alt="House"
+          width={350}
+          height={250}
+          className="rounded-md image"
+        />
+      </div>
+      <div className="flex justify-between items-center w-60  my-3">
         <div className="flex items-center gap-4">
           <span>{isVerified && <GoVerified className="text-green-500" />}</span>
           <span>
@@ -50,7 +51,7 @@ const Property = ({
         </div>
       </div>
 
-      <div className="flex items-center text-blue-700">
+      <div className="flex items-center text-blue-700 ">
         <span className="text-lg mr-2 ">{rooms} </span>
         <FaBed className="mr-5 text-lg" /> |{" "}
         <span className="text-lg ml-2 ">{baths}</span>{" "}
@@ -60,9 +61,7 @@ const Property = ({
         </span>
       </div>
 
-      <div className="">
-        {title.length > 40 ? `${title.substring(0, 30)}...` : title}
-      </div>
+      <div>{title.length > 40 ? `${title.substring(0, 30)}...` : title}</div>
     </div>
   </Link>
 );

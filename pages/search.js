@@ -16,7 +16,7 @@ function Search({ properties }) {
     <div>
       <div className="flex justify-center mb-4">
         <div className="flex items-center px-10  gap-4 bg-indigo-700 text-white mt-3 mx-8 rounded-full justify-center py-1">
-          <span className="text-lg ">Search Properties By Filters!</span>
+          <span className="text-lg">Search Properties </span>
           <span
             className="hover:bg-indigo-300 rounded-full p-1 cursor-pointer bg-indigo-500"
             onClick={() => setShowSearchFilters((prevFilters) => !prevFilters)}
